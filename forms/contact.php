@@ -10,6 +10,8 @@ if(!empty($_POST["send"])) {
 	if(mail($toEmail, $subject, $content, $mailHeaders)) {
 	    $message = "Your contact information is received successfully.";
 	    $type = "success";
+		
+	<input type="hidden" name="send" value="1">	
 	}
 }
 require_once "contact-view.php";

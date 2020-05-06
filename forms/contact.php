@@ -4,6 +4,8 @@ if(!empty($_POST["send"])) {
 	$email = $_POST["Email"];
 	$subject = $_POST["subject"];
 	$content = $_POST["content"];
+	
+	<input type="hidden" name="send" value="1">	
 
 	$toEmail = "admin@wugomedia.me";
 	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
@@ -11,7 +13,6 @@ if(!empty($_POST["send"])) {
 	    $message = "Your contact information is received successfully.";
 	    $type = "success";
 		
-	<input type="hidden" name="send" value="1">	
 	}
 }
 ?>

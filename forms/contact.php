@@ -14,5 +14,4 @@ if(!empty($_POST["send"])) {
 	<input type="hidden" name="send" value="1">	
 	}
 }
-require_once "contact-view.php";
 ?>

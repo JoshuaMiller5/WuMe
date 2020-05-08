@@ -12,9 +12,7 @@
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "You have a message from your Industial Template.";
 
-    $logo = 'http://demos.pixelatethemes.com/industrial/images/header/logo-2.png';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Industrial Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";

@@ -104,26 +104,36 @@
             </div>
         </div>
         <div class="col-lg-6">
-          <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
-            <div class="input-grids">
-              <div class="form-group">
-                <input type="text" name="w3lName" id="w3lName" placeholder="Your Name*" class="contact-input" />
-              </div>
-              <div class="form-group">
-                <input type="email" name="w3lSender" id="w3lSender" placeholder="Your Email*" class="contact-input" required="" />
-              </div>
-              <div class="form-group">
-                <input type="text" name="w3lSubect" id="w3lSubect" placeholder="Subject*" class="contact-input" />
-              </div>
-            </div>
-            <div class="form-group">
-              <textarea name="w3lMessage" id="w3lMessage" placeholder="Type your message here*" required=""></textarea>
-            </div>
-            <div class="text-right">
-              <button class="btn btn-primary btn-style">Send Message</button>
-            </div>
-          </form>
-          </div>
+          <form id="frmContact" action="" method="post">
+        <div id="mail-status"></div>
+        <div class="contact-row column-right">
+            <label style="padding-top: 20px;">Name</label> <span
+                id="userName-info" class="info"></span><br /> <input
+                type="text" name="userName" id="userName"
+                class="demoInputBox">
+        </div>
+        <div class="contact-row column-right">
+            <label>Email</label> <span id="userEmail-info" class="info"></span><br />
+            <input type="text" name="userEmail" id="userEmail"
+                class="demoInputBox">
+        </div>
+        <div class="contact-row">
+            <label>Phone</label> <span id="subject-info" class="info"></span><br />
+            <input type="text" name="subject" id="subject"
+                class="demoInputBox">
+        </div>
+        <div>
+            <label>Message</label> <span id="content-info" class="info"></span><br />
+            <textarea name="content" id="content" class="demoInputBox"
+                rows="3"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Send" class="btnAction" />
+        </div>
+    </form>
+    <div id="loader-icon" style="display: none;">
+        <img src="LoaderIcon.gif" />
+        </div>
 
         </div>
 

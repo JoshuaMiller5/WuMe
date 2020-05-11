@@ -1,10 +1,10 @@
 <?php
 
-if(isset($_POST["send"])) {
-   $name = $_POST["Name"];
-   $subject = $_POST["Subject"];
-   $mailFrom = $_POST["mail"];
-   $message = $_POST["message"];
+if (isset($_POST['submit'])) {
+   $name = $_POST['name'];
+   $subject = $_POST['subject'];
+   $mailFrom = $_POST['mail'];
+   $message = $_POST['message'];
 	
    $mailTo = "admin@wugomedia.me";
    $headers = "From: ".$mailFrom;
